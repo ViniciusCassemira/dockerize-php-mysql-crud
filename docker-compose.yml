@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80" #8080 é do Host
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: etecjau
+      MYSQL_DATABASE: biblioteca
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql #Dentro do docker desktop
+      - ./Modelagem/Projeto_Fisico.sql:/docker-entrypoint-initdb.d/Projeto_Fisico.sql:ro
+
+volumes:
+  mysql-data:
