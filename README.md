@@ -14,6 +14,14 @@ Você pode me ajudar com um PIX para tiago@tiago.blog.br 🍻
 - ``` php -S localhost:8000 ```
 - Acesse no seu navegador: http://localhost:8000
 
+#### Utilizando-se Docker:
+Para facilitar o uso da aplicação usando Docker, siga essas instruções:
+
+- Rode o seguinte comando na raiz do projeto:
+- ``` docker compose up --build -d ```
+- Acesse no seu navegador: http://localhost:8000
+- **Obervação:** Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina para executar dessa forma
+
 ## Conteúdo das Videoaulas
 ### AULA 1 - COMO FAZER MVC COM PHP 8.4 E MYSQL - AMBIENTE DE DESENVOLVIMENTO (37mim)
 - 00:00 Introdução
