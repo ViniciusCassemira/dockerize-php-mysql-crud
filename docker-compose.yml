@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8081:80" #8080 é do Host
+      - "8000:80" #8000 é do Host
     depends_on:
       - mysql
 
